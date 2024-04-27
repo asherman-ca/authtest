@@ -1,5 +1,6 @@
 import { GeistSans } from 'geist/font/sans'
 import { NextUIProvider } from '@nextui-org/react'
+import { Toaster } from '@/components/ui/toaster'
 import './globals.css'
 
 const defaultUrl = process.env.VERCEL_URL
@@ -21,7 +22,10 @@ export default function RootLayout({
 		<html lang='en' className={GeistSans.className}>
 			<body className='bg-background text-foreground'>
 				<main className='min-h-screen flex flex-col items-center'>
-					<NextUIProvider>{children}</NextUIProvider>
+					{/* <NextUIProvider> */}
+					{children}
+					{/* </NextUIProvider> */}
+					<Toaster />
 				</main>
 			</body>
 		</html>

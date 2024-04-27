@@ -10,7 +10,7 @@ interface pageProps {}
 
 const page: FC<pageProps> = ({}) => {
 	return (
-		<div>
+		<div className='w-full p-8'>
 			<ImageEditor />
 		</div>
 	)
